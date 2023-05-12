@@ -22,7 +22,7 @@ while True:
     operacao = input("""[W] GRAVAR
 [R] LER
 [L] LISTAR TODA A MEMÓRIA
-[ ] SAIR
+[S] SAIR
 ESCOLHA UMA OPÇÃO:  """)
     print()
     if operacao in 'Ww':
