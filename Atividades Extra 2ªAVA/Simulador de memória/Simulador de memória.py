@@ -21,7 +21,7 @@ data = 0
 while True: 
     operacao = input("""[W] GRAVAR 
 [R] LER
-[L] LISTAR TODA A MEMÓRIA
+[L] LISTAR TODAS AS CÉLULAS
 [S] SAIR
 ESCOLHA UMA OPÇÃO:  """)
     print()
