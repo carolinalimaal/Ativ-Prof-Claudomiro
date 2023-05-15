@@ -27,8 +27,10 @@ ESCOLHA UMA OPÇÃO:  """)
     print()
     if operacao in 'Ww':
         address = input('INSIRA O ENDEREÇO DE 4 BITS: ')
-        address = int(address, 2) #Para tranformar o valor de bnário para decimal 
-        data = input('INSIRA O DADO DE 8 BITS: ')
+        address = int(address, 2) #Para tranformar o valor de binário para decimal 
+        data = input('INSIRA O DADO DE 8 BITS: ').zfill(8)
+        if len(data) > 8:
+            print('Dado inválido')
         memory[address] = data #Vai armazenar o novo dado sobre ou antigo
         write(address, data)
 
